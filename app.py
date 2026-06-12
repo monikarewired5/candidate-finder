@@ -1,13 +1,13 @@
 import streamlit as st
 import pandas as pd
-from serpGoogleSearch import scalable_serp_lookup
+from cheaperSerperDevGoogleSearch import scalable_serp_lookup
 from dotenv import load_dotenv
 from io import BytesIO
 import os
 
 load_dotenv()
 
-api_key = os.getenv("SERPAPI_KEY")
+api_key = os.getenv("SERPER_DEV_API_KEY")
 
 
 st.title("LinkedIn Profile Finder")
